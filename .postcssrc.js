@@ -10,6 +10,7 @@ module.exports = {
     "postcss-import": {}, // 解决@import引入问题
     "postcss-url": {}, // 处理文件路径的引用
     "autoprefixer": {},
+    // 转换现代CSS为浏览器支持的pkg
     'postcss-preset-env': {},
     "postcss-aspect-ratio-mini": {}, // 处理元素容器宽高比
     // 处理移动端1px的解决方案。该插件主要使用的是border-image和background来做1px的相关处理

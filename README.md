@@ -11,7 +11,7 @@
   - commitlint
 
 - 集成H5自适配方案
-  - 基于vw/vh + Postcss的自适配方案
+  - 基于vw/vh + Postcss的自适配方案(配置内容见.postcssrc.js)
 
 
 - 集成webpack配置
