@@ -67,10 +67,9 @@ const devConfigJs = {
     new webpack.HotModuleReplacementPlugin() // HMR
   ],
   devServer: {
-    disableHostCheck: true,
     clientLogLevel: 'warning', // 输出日志级别
     hot: true, // 启用热更新
-    contentBase: path.resolve(__dirname, 'dist'), // 告诉服务器从哪里提供内容
+    contentBase: path.resolve(__dirname, './dist'), // 告诉服务器从哪里提供内容
     publicPath: '/', // 此路径下的打包文件可在浏览器下访问
     compress: true, // 启用gzip压缩
     host: '0.0.0.0',
@@ -113,7 +112,7 @@ const devConfigJs = {
         }
       }
     },
-    stats: 'verbose',
+    // stats: 'verbose',
     watchOptions: {
       // 监控文件相关配置
       poll: 1000,
