@@ -26,12 +26,7 @@ const devConfigJs = {
             }
           },
           {
-            loader: 'postcss-loader',
-            options: {
-              ident: 'postcss',
-              sourceMap: true,
-              plugins: loader => [require('autoprefixer')({})]
-            }
+            loader: 'postcss-loader'
           },
           {
             loader: 'sass-loader',
