@@ -29,7 +29,7 @@
         "prettier --write",
         "git add"
       ],
-      "ignore": ["/dist/", "/node_modules/", "/h5/"]
+      "ignore": ["/dist/", "/node_modules/"]
     }
   },
   "dependencies": {
