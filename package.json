@@ -18,16 +18,19 @@
     }
   },
   "lint-staged": {
-    "src/*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "src/**/*.{js, vue}": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
+    "linters": {
+      "*.js": [
+        "eslint --fix",
+        "prettier --write",
+        "git add"
+      ],
+      "*.vue": [
+        "eslint --fix",
+        "prettier --write",
+        "git add"
+      ],
+      "ignore": ["/dist/", "/node_modules/", "/h5/"]
+    }
   },
   "dependencies": {
     "axios": "^0.19.0",
